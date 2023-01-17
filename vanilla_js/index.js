@@ -1,3 +1,4 @@
+// function makes a single call to faker api
 async function getFaker(
   baseurl = "https://fakerapi.it/api/v1",
   resource,
@@ -24,6 +25,7 @@ async function getFaker(
   }
 }
 
+// function makes parrallel calls to faker api
 async function callFakerMultiple(array) {
   let results = [];
 
@@ -40,11 +42,13 @@ async function callFakerMultiple(array) {
 }
 
 /* ------- Test single and Parrallel api calls ------ */
+// param object for the getFaker function
 const single_params = {
   _gender: "female",
   _quantity: 12,
 };
 
+// parameters for the callFakerMultiple function
 const multi_params = [
   {
     params: {
@@ -76,7 +80,7 @@ async function testFunctions() {
   // since faker api returns an array of object, the callFakerMultiple function joins the arrays into a single array.
 
   console.log(parrallel_result);
-  console.log(single_result);
+  // console.log(single_result);
 }
 testFunctions();
 
