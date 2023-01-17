@@ -68,7 +68,8 @@ const multi_params = [
   },
 ];
 
-async function testFunctios() {
+// lets see the results down here||
+async function testFunctions() {
   const single_result = await getFaker(undefined, "users", single_params);
   const parrallel_result = await callFakerMultiple(multi_params);
 
@@ -77,7 +78,7 @@ async function testFunctios() {
   console.log(parrallel_result);
   console.log(single_result);
 }
-testFunctios();
+testFunctions();
 
 // PS..... to join objects we do
 // obja = {..}
