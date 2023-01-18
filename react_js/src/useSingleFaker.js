@@ -57,13 +57,8 @@ async function getFaker(
   fullurl.search = new URLSearchParams(params);
 
   // call faker api
-  try {
-    const response = await fetch(fullurl.href);
-    const data = await response.json();
-    return data.data;
-  } catch (error) {
-    console.log(error);
-    return undefined;
-  }
+  const response = await fetch(fullurl.href);
+  const data = await response.json();
+  return data.data;
 }
 export { getFaker };
