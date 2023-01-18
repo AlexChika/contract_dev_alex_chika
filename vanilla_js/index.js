@@ -35,10 +35,12 @@ async function callFakerMultiple(array) {
   );
 
   // parrallel api calls
-  return Promise.all(calls).then((result) => {
-    results = result.flat();
-    return results;
-  });
+  return Promise.all(calls)
+    .then((result) => {
+      results = result.flat();
+      return results;
+    })
+    .catch((err) => console.log(err));
 }
 
 /* ------- Test single and Parrallel api calls ------ */
