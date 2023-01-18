@@ -87,6 +87,6 @@ testFunctions();
 // PS..... to join objects we do
 // obja = {..}
 // objb = {...}
-// objc = {...obja,objb}
+// objc = {...obja,...objb}
 
 // check the react folder for a react hook that returns the result of multiple calls and single calls with loading state, errror and data
