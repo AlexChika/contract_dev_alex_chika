@@ -25,7 +25,7 @@ const useSingleFaker = (baseUrl, resource, params) => {
         setError(true);
         setData(null);
 
-        console.log(error);
+        console.log(error.message);
       }
     }
 

@@ -26,7 +26,7 @@ const useParallelFaker = (array) => {
         setError(true);
         setData(null);
 
-        console.log(error);
+        console.log(error.message);
       }
     }
 
